@@ -11,8 +11,7 @@ const styles=StyleSheet.create({
         borderRadius:100,
         margin:4,
         marginVertical:10,
-        maxWidth:'100%',
-        minWidth:'90%'
+        flex:1
     },
     input:{
       

@@ -1,10 +1,10 @@
 import { StyleSheet, View } from "react-native";
 
-import IonIcons from '@expo/vector-icons/Ionicons'
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5'
 import InputField from "../ui/text-input";
-export default function IconInputField({hint,value,name,handleChange,icon,secureTextEntry}){
+export default function IconInputField({hint,value,name,handleChange,icon,secureTextEntry,color}){
     return <View style={styles.container}>
-       <IonIcons name={icon} size={24} color={'blue'}/>
+       <FontAwesome5 name={icon} size={24} color={color}/>
        <InputField hint={hint} value={value} name={name} handleChange={handleChange} secureTextEntry={secureTextEntry}/>
     </View>
 }
