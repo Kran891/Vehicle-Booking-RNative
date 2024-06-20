@@ -80,7 +80,7 @@ const data=[
       c5:'AP04 CV 8981'
     }
   ]
-export default function(){
+export default function({navigation}){
    const userData=useSelector((state)=>state.User.user)
    console.log(userData);
     return <FlatList data={data} renderItem={
